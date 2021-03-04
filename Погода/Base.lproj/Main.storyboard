@@ -1,24 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nCB-v1-RZn">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="yEc-nz-QQ1">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="nCB-v1-RZn" customClass="ViewController" customModule="Погода" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dq2-NM-Qru">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9RN-GN-rgY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.51870990269999995" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo_2021-03-03 23.22.04" translatesAutoresizingMaskIntoConstraints="NO" id="FPG-8u-cSn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pdf-Va-R0E">
+                                <rect key="frame" x="137.5" y="277.5" width="139.5" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKW-5h-fY0">
+                                <rect key="frame" x="166" y="84" width="82.5" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efM-Wh-McS">
+                                <rect key="frame" x="183" y="146" width="48" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10d" translatesAutoresizingMaskIntoConstraints="NO" id="aEu-cQ-Yty">
+                                <rect key="frame" x="172" y="349.5" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Wb2-Ry-Qxn"/>
+                                    <constraint firstAttribute="height" constant="70" id="acf-fz-1ED"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aCs-0H-KTh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="efM-Wh-McS" firstAttribute="top" secondItem="zKW-5h-fY0" secondAttribute="bottom" constant="20" id="4H2-SN-G2p"/>
+                            <constraint firstAttribute="bottom" secondItem="FPG-8u-cSn" secondAttribute="bottom" id="5Xk-xR-odp"/>
+                            <constraint firstItem="FPG-8u-cSn" firstAttribute="leading" secondItem="aCs-0H-KTh" secondAttribute="leading" id="KlG-vg-rfN"/>
+                            <constraint firstItem="zKW-5h-fY0" firstAttribute="centerX" secondItem="Dq2-NM-Qru" secondAttribute="centerX" id="bjI-df-bhF"/>
+                            <constraint firstItem="aEu-cQ-Yty" firstAttribute="top" secondItem="Pdf-Va-R0E" secondAttribute="bottom" id="buc-hM-HY2"/>
+                            <constraint firstItem="Pdf-Va-R0E" firstAttribute="centerY" secondItem="Dq2-NM-Qru" secondAttribute="centerY" multiplier="0.7" id="eWZ-O2-KfV"/>
+                            <constraint firstItem="Pdf-Va-R0E" firstAttribute="centerX" secondItem="Dq2-NM-Qru" secondAttribute="centerX" id="f5J-u7-16L"/>
+                            <constraint firstItem="aEu-cQ-Yty" firstAttribute="centerX" secondItem="Dq2-NM-Qru" secondAttribute="centerX" id="gBo-eG-kgX"/>
+                            <constraint firstItem="FPG-8u-cSn" firstAttribute="top" secondItem="Dq2-NM-Qru" secondAttribute="top" id="psf-od-VKX"/>
+                            <constraint firstItem="zKW-5h-fY0" firstAttribute="top" secondItem="aCs-0H-KTh" secondAttribute="top" constant="40" id="q3l-Vj-82f"/>
+                            <constraint firstItem="efM-Wh-McS" firstAttribute="centerX" secondItem="Dq2-NM-Qru" secondAttribute="centerX" id="rzr-6R-ujK"/>
+                            <constraint firstItem="FPG-8u-cSn" firstAttribute="trailing" secondItem="aCs-0H-KTh" secondAttribute="trailing" id="xyv-re-INP"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityNameLabel" destination="zKW-5h-fY0" id="CES-Fh-vqj"/>
+                        <outlet property="tempLabel" destination="Pdf-Va-R0E" id="Lzi-0m-wzZ"/>
+                        <outlet property="weatherIconImage" destination="aEu-cQ-Yty" id="AX0-NA-dsO"/>
+                        <outlet property="weatherLabelDiscription" destination="efM-Wh-McS" id="hF2-0a-xo9"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DTd-YD-giS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-316" y="-78"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="10d" width="50" height="50"/>
+        <image name="photo_2021-03-03 23.22.04" width="640" height="1136"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
